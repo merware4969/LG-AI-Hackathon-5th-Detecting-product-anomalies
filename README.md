@@ -1,3 +1,22 @@
+## 프로젝트 개요
+
+- **목표**: 생산공정에서 나오는 다양한 데이터 불량 예측 AI 모델 개발
+- **핵심 성과**: RandomForest 기반 이진 분류 모델을 활용하여 데이터셋 불균형 처리 등의 전처리 등을 통해 불량 발생 여부 판별
+
+### 사용 기술 및 라이브러리
+
+| 구분 | 도구/기술 |
+| --- | --- |
+| 📦 데이터 전처리 | `pandas`, `numpy`, `sklearn.preprocessing` |
+| 🧪 차원 축소 | `PCA` from `sklearn.decomposition` |
+| 🧠 모델 학습 | `RandomForestClassifier` from `sklearn.ensemble` |
+| ⚖️ 클래스 불균형 처리 | `SMOTE` from `imblearn.over_sampling` |
+| 📊 평가 지표 | `f1_score`, `classification_report`, `confusion_matrix` from `sklearn.metrics` |
+| 📈 시각화 | `matplotlib`, `seaborn`, `dendrogram` from `scipy.cluster.hierarchy` |
+| 🧩 기타 기법 | One-Hot Encoding (`pd.get_dummies`), 피처 중요도 추출, 덴드로그램 기반 군집화 |
+
+---
+
 # 상세 내용
 
 ## 1. 데이터 전처리
@@ -90,26 +109,13 @@ PCA 축소된 변수(`PCA_Group_10_PC1`)도 높은 중요도를 가짐 → **차
 | 🎯 최종 평가 지표 | 점수: **0.188235** |
 
 
-
-### 2) 사용 기술 및 라이브러리
-
-| 구분 | 도구/기술 |
-| --- | --- |
-| 📦 데이터 전처리 | `pandas`, `numpy`, `sklearn.preprocessing` |
-| 🧪 차원 축소 | `PCA` from `sklearn.decomposition` |
-| 🧠 모델 학습 | `RandomForestClassifier` from `sklearn.ensemble` |
-| ⚖️ 클래스 불균형 처리 | `SMOTE` from `imblearn.over_sampling` |
-| 📊 평가 지표 | `f1_score`, `classification_report`, `confusion_matrix` from `sklearn.metrics` |
-| 📈 시각화 | `matplotlib`, `seaborn`, `dendrogram` from `scipy.cluster.hierarchy` |
-| 🧩 기타 기법 | One-Hot Encoding (`pd.get_dummies`), 피처 중요도 추출, 덴드로그램 기반 군집화 |
-
-### 3) 담당한 부분
+### 2) 담당한 부분
 
 - 데이터 전처리
 - EDA
 - SMOTE
 
-### 4) 배운 점
+### 3) 배운 점
 
 **데이터 불균형 문제에 대한 실전 이해**
 
