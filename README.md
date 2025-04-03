@@ -1,9 +1,3 @@
-### Link
-
-**Source code**
-
-https://github.com/merware4969/LG-AI-Hackathon-5th-Detecting-product-anomalies/blob/main/code.ipynb
-
 # 상세 내용
 
 ## 1. 데이터 전처리
